@@ -1,0 +1,118 @@
+.t_lang .tl_anc .la_flag
+{
+    margin-right: 5px;
+}
+.t_lang .tl_anc > i
+{
+    margin-left: 3px;
+}
+.h_recomend > li:first-child
+{
+    margin-right: 20px;
+}
+.h_recomend > li > .re_btn .reco_fa
+{
+    margin-right: 3px;
+}
+.search_icon
+{
+    right: 3px;
+}
+.pag_slider .swiper-button-next:after
+{
+    content: '\f054';
+}
+.pag_slider .swiper-button-prev:after
+{
+    content: '\f053';
+}
+.main_slider .swiper-button-prev
+{
+    left: 35px;
+}
+.main_slider .swiper-button-next
+{
+    right: 35px;
+}
+.bestseller_slider .swiper-button-prev
+{
+    left: -80px;
+}
+.bestseller_slider .swiper-button-next
+{
+    right: -80px;
+    left: auto;
+}
+.mail_cont .fm_check
+{
+    right: 0;
+}
+.foo_desc
+{
+    padding-right: 80px;
+}
+.foo_social > li 
+{
+    margin-right: 24px;
+}
+
+@media (min-width:992px) and (max-width:1199px)	
+{
+    .bestseller_slider .swiper-button-prev
+    {
+        left: -20px;
+    }
+    .bestseller_slider .swiper-button-next
+    {
+        right: -20px;
+        left: auto;
+    }
+}
+
+@media (max-width:991px)	
+{
+    footer .fast_links .fsm_title:before
+    {
+        right: 20px;
+    }
+    .foo_social > li 
+    {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+        .foo_desc
+    {
+        padding-right: 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)	
+{
+
+}
+
+
+
+
+
+@media (max-width:767px)	
+{
+    .mob_icons > li:not(:last-child)
+    {
+        margin-right: 12px;
+    }
+    .main_nav
+    {
+        left: 0;
+    }
+    .closebtn
+    {
+        right: 20px;
+    }
+    header .nav_bar
+    {
+        text-align: left;
+    }
+
+    
+}

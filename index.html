@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<head>
+		<meta charset="utf-8">
+		<!-- for internet explorere -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--(the most important line) for mobile first -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+		<title>ta3ttar</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/linear.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-ar.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>-->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+        <script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper-bundle.js"></script>
+		<script src="js/plug.js"></script>
+	</head>
+	<body>
+         <!-- Start preloader -->
+        <div class="pre-loader">
+          <div class="content"><img src="images/logo.png" alt="logo" />
+              <div class="progress-bar"><span class="bar"><span class="progress"></span></span></div>
+          </div>
+        </div>
+         <!-- End preloader -->
+         <div class="over_click"></div>
+         <!-- Start header -->
+         <header>
+             <div class="top_nav">
+                 <div class="container">
+                     <div class="top_bar">
+                         <div class="st_lang">
+                             <div class="t_lang dropdown">
+                                  <a class="dropdown-toggle tl_anc fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="la_flag">
+                                        <img class="i_lang" src="images/ar.png" alt="language">
+                                    </span> العربية
+                                    <i class="fas fa-chevron-down"></i>
+                                  </a>
+                                  <ul class="dropdown-menu sam_menu ulfix">
+                                   <li>
+                                        <a href="index-en.html" class="fixanc">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html" class="fixanc">العربية</a>
+                                    </li>
+                                  </ul>
+                              </div> 
+                         </div>
+                         <ul class="list-unstyled list-inline ulfix h_recomend">
+                             <li class="my_account lg dropdown">
+                                 <a class="re_btn dropdown-toggle fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="hre_icon"><i class="fa fa-user reco_fa"></i></span> 
+                                    حسابي
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu ulfix sam_menu">
+                                    <li>
+                                        <a href="#" class="fixanc">تسجيل الدخول</a>
+                                    </li>
+                                    <li><a href="#" class="fixanc">تسجيل جديد</a></li>
+                                </ul>
+                             </li>
+                             <li class="cart">
+                                <a class="re_btn fixanc" href="#"> 
+                                    <i class="fa fa-shopping-cart reco_fa"></i>
+                                    سلة التسوق
+                                    
+                                </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+             <div class="mid_nav">
+                 <div class="container">
+                     <div class="mid_bar">
+                         <div class="logo">
+                            <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                         </div>
+                         
+                         <ul class="list-unstyled list-inline ulfix mob_icons">
+                            <li class="srch">
+                                <a href="#" class="re_btn fixanc" data-toggle="modal" data-target=".over_mod">
+                                       <i class="fas fa-search"></i>
+                                </a>
+                             </li>
+                            <li class="mob_navbtn">
+                                <a id="navbtn" class="re_btn fixanc">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </li>
+                         </ul>
+                         <div class="search_cont lg">
+                             <div class="search_box">
+                                <input class="searchinput" id="search" placeholder=" ابحث عن ما تريد.." type="search">
+                                <button class="search_icon"type="submit">ابحث</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="down_nav">
+                <div class="container">
+                    <div class="main_nav">
+                         <span href="#" class="lnr lnr-cross closebtn"></span>
+                         <ul class="nav_bar list-unstyled list-inline ulfix">
+                            <li><a class="fixanc" href="#">الرئيسية</a></li>
+                            <li><a class="fixanc" href="#">وصل حديثا</a></li>
+                            <li><a class="fixanc" href="#">عطور</a></li>
+                            <li><a class="fixanc" href="#">عود</a></li>
+                            <li><a class="fixanc" href="#">دهون</a></li>
+                            <li><a class="fixanc" href="#">من نحن</a></li>
+                            <li><a class="fixanc" href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+         </header>
+         <!-- end header -->
+         
+         
+                  <!--------------- start search modal ---------------->
+            <div class="modal fade over_mod" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="lnr lnr-cross"></span>
+                </button>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="search_cont sm">
+                             <div class="search_box">
+                                <input class="searchinput" id="search" placeholder=" ابحث عن ما تريد.." type="search">
+                                <button class="search_icon"type="submit">ابحث</button>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------- end search modal ---------------->
+         
+            <!-- Start Main Slider -->
+          <div class="main_slider_sec">
+                <div class="main_slider pag_slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-fluid">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-fluid">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+          </div>
+          <!-- end Main Slider -->
+          
+          
+         <!-- start categories Slider -->
+          <div class="our_categs">
+             <img src="images/catback.png" class="cat_back img-responsive" />
+              <div class="container">
+                  <div class="catgs_slider bullets_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ocatgs">
+                                   <a href="#" class="catgs_img fixanc">
+                                       <img src="images/cat1.jpg" class="img-responsive" />
+                                   </a>
+                                   <a href="#" class="catgs_tit fixanc">عــــطور</a>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ocatgs">
+                                   <a href="#" class="catgs_img fixanc">
+                                       <img src="images/cat2.jpg" class="img-responsive" />
+                                   </a>
+                                   <a href="#" class="catgs_tit fixanc">عــــود</a>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ocatgs">
+                                   <a href="#" class="catgs_img fixanc">
+                                       <img src="images/cat3.jpg" class="img-responsive" />
+                                   </a>
+                                   <a href="#" class="catgs_tit fixanc">دهــــون</a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- end categories Slider -->
+          
+           <!-- start new arrivals -->
+          <div class="new_arrivals">
+              <div class="container">
+                 <div class="new_arrivals_cont">
+                   <h3 class="cont_title hhfix">وصل حديثاً</h3>
+                   <div class="new_arrivallsrow">
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro1.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro2.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro3.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro4.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro5.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro6.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro7.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                        
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/pro8.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="pr_desc">
+                                <div class="pr_name">
+                                    <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                </div>
+                                <div class="pr_price">
+                                    <span class="prev">184.00ر.س</span>
+                                    <span class="cur">92.00ر.س</span>
+                                </div>
+                                <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="buy_now">
+                       <a href="#" class="fixanc">اشتري الأن</a>
+                   </div>
+                 </div>
+              </div>
+          </div>
+          <!-- end new arrivals -->
+          
+        <!-- satart big banner -->
+          <div class="big_banners">
+              <div class="container">
+                  <div class="ban_cont">
+                    <a href="#" class="ban_anc">
+                        <img src="images/ban1.jpg" alt="banner" class="img-responsive" />
+                    </a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- end big banner -->
+          
+          
+           <!-- start new arrivals -->
+          <div class="best_seller">
+              <div class="container">
+                 <div class="best_seller_cont">
+                   <h3 class="cont_title hhfix">الأفضل مبيعاً</h3>
+                   <div class="bestseller_slider bullets_slider pag_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/pro8.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <div class="pr_name">
+                                            <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                        </div>
+                                        <div class="pr_price">
+                                            <span class="prev">184.00ر.س</span>
+                                            <span class="cur">92.00ر.س</span>
+                                        </div>
+                                        <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/pro4.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <div class="pr_name">
+                                            <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                        </div>
+                                        <div class="pr_price">
+                                            <span class="prev">184.00ر.س</span>
+                                            <span class="cur">92.00ر.س</span>
+                                        </div>
+                                        <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/pro5.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <div class="pr_name">
+                                            <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                        </div>
+                                        <div class="pr_price">
+                                            <span class="prev">184.00ر.س</span>
+                                            <span class="cur">92.00ر.س</span>
+                                        </div>
+                                        <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/pro7.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <div class="pr_name">
+                                            <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                        </div>
+                                        <div class="pr_price">
+                                            <span class="prev">184.00ر.س</span>
+                                            <span class="cur">92.00ر.س</span>
+                                        </div>
+                                        <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/pro6.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <div class="pr_name">
+                                            <a href="#" class="fixanc">عطر المساء - 100 مل</a>
+                                        </div>
+                                        <div class="pr_price">
+                                            <span class="prev">184.00ر.س</span>
+                                            <span class="cur">92.00ر.س</span>
+                                        </div>
+                                        <a role="button" type="button" class="add_cart fixanc">أضف للسلة</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                   </div>
+                 </div>
+              </div>
+        </div>
+        <!-- end new arrivals -->
+        
+        <!-- satart medium banner -->
+          <div class="medium_banners">
+             <img src="images/catback.png" class="cat_back img-responsive" />
+              <div class="container">
+                 <div class="banners_row">
+                      <div class="ban_cont">
+                        <a href="#" class="ban_anc">
+                            <img src="images/ban2.jpg" alt="banner" class="img-responsive" />
+                        </a>
+                      </div>
+                      <div class="ban_cont">
+                        <a href="#" class="ban_anc">
+                            <img src="images/ban3.jpg" alt="banner" class="img-responsive" />
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- end medium banner -->
+          
+          <!-- start our_partners -->
+         <div class="our_partners">
+           <div class="container">
+               <div class="partner_slider bullets_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="agent_photo">
+                                    <a href="#">
+                                        <img src="images/brand.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                         </div>
+                   </div>
+                   <div class="swiper-pagination"></div>
+               </div>
+           </div>
+       </div>
+        <!-- end our_partners -->
+        
+        <!-- start footer -->
+        <footer>
+            <!-- start newsletter -->
+            <div class="container">
+                <div class="our_newsletter">
+                    <div class="newsl_cont">
+                        <h3 class="hhfix newsl_title">اشترك في <span class="spot">النشرة البريدية</span> ليصلك جديد عروضنا</h3>
+                        <div class="form-group mail_cont">
+                            <input type="email" class="form-control ffmail_input" id="exampleInputEmail1" placeholder=" ادخل بريدك الالكتروني ">
+                            <button class="fm_check"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- end newsletter -->
+                <div class="foot_cont">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="foo_desc">
+                                <div class="logo">
+                                    <a href="#"><img class="img-responsive" src="images/footer-logo.png" alt="logo"></a>
+                                </div>
+                                <p class="hhfix foo_p">
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                                </p>
+                                <ul class="foo_social list-unstyled list-inline ulfix">
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id10" aria-expanded="false">معلومات</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id10">
+                                    <li><a class="fixanc" href="#">من نحن </a></li>
+                                    <li><a class="fixanc" href="#">الشحن والتوصيل</a></li>
+                                    <li><a class="fixanc" href="#">الحسابات البنكية</a></li>
+                                    <li><a class="fixanc" href="#">الخصوصية</a></li>
+                                    <li><a class="fixanc" href="#">شروط الإستخدام</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id12" aria-expanded="false">خدمة العملاء</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id12">
+                                    <li><a class="fixanc" href="#">اتصل بنا</a></li>
+                                    <li><a class="fixanc" href="#">ارجاع الطلب</a></li>
+                                    <li><a class="fixanc" href="#">خريطة الموقع</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id9" aria-expanded="false">حسابي</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id9">
+                                    <li><a class="fixanc" href="#">حسابي</a></li>
+                                    <li><a class="fixanc" href="#">طلباتي</a></li>
+                                    <li><a class="fixanc" href="#">قائمة رغباتي</a></li>
+                                    <li><a class="fixanc" href="#">القائمة البريدية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id11" aria-expanded="false">اضافات</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id11">
+                                    <li><a class="fixanc" href="#">الشركات</a></li>
+                                    <li><a class="fixanc" href="#">قسائم الهدايا</a></li>
+                                    <li><a class="fixanc" href="#">نظام العمولة</a></li>
+                                    <li><a class="fixanc" href="#">العروض المميزة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fopayco">
+                    <div class="ff_rghts">
+                             ©     متجر تعطر  - تصميم وتطوير  
+                             
+                             <a href="#"><img src="images/tasawk-c-ar2.png"></a>
+                    </div>
+                    <div class="ff_pay">
+                        <img src="images/pay.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        
+    </body>
+</html>

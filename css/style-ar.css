@@ -1,0 +1,118 @@
+.t_lang .tl_anc .la_flag
+{
+    margin-left: 5px;
+}
+.t_lang .tl_anc > i
+{
+    margin-right: 3px;
+}
+.h_recomend > li:first-child
+{
+    margin-left: 20px;
+}
+.h_recomend > li > .re_btn .reco_fa
+{
+    margin-left: 3px;
+}
+.search_icon
+{
+    left: 3px;
+}
+.pag_slider .swiper-button-next:after
+{
+    content: '\f053';
+}
+.pag_slider .swiper-button-prev:after
+{
+    content: '\f054';
+}
+.main_slider .swiper-button-prev
+{
+    right: 35px;
+}
+.main_slider .swiper-button-next
+{
+    left: 35px;
+}
+.bestseller_slider .swiper-button-prev
+{
+    right: -80px;
+}
+.bestseller_slider .swiper-button-next
+{
+    left: -80px;
+    right: auto;
+}
+.mail_cont .fm_check
+{
+    left: 0;
+}
+.foo_desc
+{
+    padding-left: 80px;
+}
+.foo_social > li 
+{
+    margin-left: 24px;
+}
+
+@media (min-width:992px) and (max-width:1199px)	
+{
+    .bestseller_slider .swiper-button-prev
+    {
+        right: -20px;
+    }
+    .bestseller_slider .swiper-button-next
+    {
+        left: -20px;
+        right: auto;
+    }
+}
+
+@media (max-width:991px)	
+{
+    footer .fast_links .fsm_title:before
+    {
+        left: 20px;
+    }
+    .foo_social > li 
+    {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+        .foo_desc
+    {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)	
+{
+
+}
+
+
+
+
+
+@media (max-width:767px)	
+{
+    .mob_icons > li:not(:last-child)
+    {
+        margin-left: 12px;
+    }
+    .main_nav
+    {
+        right: 0;
+    }
+    .closebtn
+    {
+        left: 20px;
+    }
+    header .nav_bar
+    {
+        text-align: right;
+    }
+
+    
+}
